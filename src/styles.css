@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+  --main-bg-color: white;
+  --card-bg-color: lightyellow;
+  --main-accent-color: skyblue;
+  --light-shadow: 2px 2px 5px 0.2px #00000033;
+  font-family: 'DM Sans', sans-serif;
+}
+html, body{
+  height: 100vh;
+  margin:0;
+  padding:0;
+
+}
+.post-it{
+  width: 80%;
+  max-width: 800px;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding:20px;
+  border-radius: 20px;
+  box-shadow: var(--light-shadow);
+  min-height: 400px;
+}
+
+.big-button{
+  width: 2em;
+}
+.todo-button, button{
+  border:none;
+  font-weight: bold;
+  transition: filter 0.1s ease-in;
+  border-radius: 5px;
+  cursor:pointer;
+}
+.todo-button:active{
+  filter:brightness(0.9);
+}
+
+.overlay-shadow{
+  box-shadow: 2px 2px 5px 0.2px #00000033;
+}
+
+input, textarea{
+  border: none;
+  background-color: #00000000;
+  border-radius: 5px;
+
+}
+* {
+  font-family: 'DM Sans',sans-serif;
+
+}
+.back-button{
+  width: 75px;
+  height: 2.1em;
+  border-radius: 9999px;
+  display:flex;
+  align-items: center;
+  cursor: pointer;
+}
+.back-button:hover{
+  display: flex
+
+}
+#form-upper{
+  display:flex;
+  align-items: center
+}
+.completed{
+  text-decoration: line-through;
+}
+.delete-button{
+  padding:0.5em;
+  margin:0.5em;
+  background-color: rgb(255, 200, 200);
+  color:red;
+}

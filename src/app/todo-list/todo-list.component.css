@@ -1,0 +1,40 @@
+
+#todo-add-button{
+  background-color: var(--main-accent-color);
+  font-weight: bold;
+  font-size: x-large;
+  border-radius: 5px;
+  width: 2em;
+  float:right;
+  height:1.5em;
+  color:rgb(0, 134, 179);
+
+}
+#todo-add-button:active{
+  background-color: var(--main-accent-color);
+  font-weight: bold;
+  font-size: x-large;
+  border-radius: 5px;
+  width: 2em;
+  float:right;
+}
+.todo-list-header{
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height:3em;
+  margin-bottom: 1em;
+}
+.list-name{
+  width: 70%;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.solid-separator{
+  border: 1px solid #00000033;
+}
+#empty-message{
+  color: gray;
+}

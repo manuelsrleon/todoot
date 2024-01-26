@@ -1,0 +1,19 @@
+<div class="post-it">
+  <div class="todo-list">
+    <div class="todo-list-header">
+      <h2 id="list-name">Stuff to do.</h2>
+      <button routerLink="add" title="add-button" type="button" id="todo-add-button" class="todo-button">+</button>
+    </div>
+
+    <div *ngIf="(todos$ | async)!.length > 0; else empty">
+      <div class="observable" *ngFor="let todo of todos$ | async; index as i">
+        <app-todo-item [todoData]="todo"></app-todo-item>
+      </div>
+    </div>
+
+    <ng-template #empty>
+      <span id="empty-message">This place seems empty. <br>Why don't you try adding some TODOs?</span>
+    </ng-template>
+  </div>
+
+</div>

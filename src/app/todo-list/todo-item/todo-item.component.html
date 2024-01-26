@@ -1,0 +1,9 @@
+<!--<div class="todo-item" routerLink="list/{{todoData.id}}">-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<div class="todo-item">
+  <input type="checkbox" title="todo-item" [checked]="todoData.completed" (change)="toggleCompleted(todoData.id)">
+  <span class="name" routerLink="list/{{todoData.id}}"
+  [ngClass]="{'completed': todoData.completed}">{{todoData.name}}</span>
+  <button type="button" title="delete-item-button" class="todo-button delete-button" (click)="removeTodoItem(todoData.id)">Delete</button>
+</div>
+

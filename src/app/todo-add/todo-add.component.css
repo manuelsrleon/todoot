@@ -1,0 +1,50 @@
+
+input {
+  border: none;
+  margin:5px;
+}
+#todo-add-form{
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+#todo-add-form > *{
+  margin-top: 5px;
+}
+
+
+#form-upper-name-container{
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+#todo-add-create{
+  width: 80px;
+  height: 40px;
+  align-self: flex-end;
+  background-color: var(--main-accent-color);
+  transition: filter 0.2s;
+}
+#todo-add-create:active{
+  filter: brightness(0.8);
+
+}
+#todo-name-input{
+  width: 100%;
+  font-size: 2em;
+}
+#todo-description{
+  flex-grow: 1;
+}
+#todo-description-input{
+  flex-grow: 1;
+  resize:none;
+}
+#todo-description-input:focus, #todo-name-input:focus{
+  outline: none;
+  background-color: #0001;
+}
+.create-disabled{
+  background-color: lightgray !important;
+  pointer-events: none;
+}

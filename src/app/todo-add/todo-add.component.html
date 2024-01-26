@@ -1,0 +1,21 @@
+<div class="post-it">
+  <button routerLink="" title="go-back" class="back-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+      <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+    </svg>
+    Back
+  </button>
+<form id="todo-add-form" (ngSubmit)="onSubmit()" #todoForm="ngForm">
+  <div id="form-upper">
+
+    <div id="form-upper-name-container">
+
+    <input type="text" autocomplete="nope" name="poteito" title="name-no-autocomplete" id="todo-name-input" placeholder="write your task here..." required [(ngModel)]="model.name">
+
+  </div>
+  </div>
+
+    <textarea type="text" name="description"  title="description" id="todo-description-input" placeholder="write its description here..." [(ngModel)]="model.description" rows="10"></textarea>
+  <button [disabled]="!todoForm.form.valid" [ngClass]="!todoForm.form.valid? 'create-disabled' : '' " type="submit" id="todo-add-create" title="create" >Create</button>
+</form>
+</div>

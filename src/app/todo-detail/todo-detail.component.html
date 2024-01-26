@@ -1,0 +1,15 @@
+<div class="post-it" *ngIf="todoData !== undefined;">
+  <div id="form-upper">
+    <button routerLink="" title="go-back" class="back-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+      </svg>
+      Back
+    </button>
+    <input type="checkbox" title="todo-item" [checked]="todoData.completed" (change)="toggleCompleted(todoData.id)">
+    <h1 class="todo-name" [ngClass]="{'completed': todoData.completed}">{{todoData.name}}</h1>
+    <button type="button" title="delete-item-button" class="todo-button delete-button" (click)="removeTodoItem(todoData.id)">Delete</button>
+  </div>
+  {{todoData.description}}
+
+</div>
