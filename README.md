@@ -1,4 +1,4 @@
-# Aplicación de todos
+# Aplicación de to-dos
 
 This is a little exercise proposed to me as a test. Built using Angular 17 + NgRx
 
